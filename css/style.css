@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+:root {
+    --font-color: white;
+    --dimmed-font-color: rgb(160, 160, 160);
+    --background1-color: #171E1F;
+    --horizontalnav-color: rgb(63, 32, 18);
+}
+
+.background1 {
+    background-color: var(--background1-color);
+}
+
+p {
+    font-family: "Hammersmith One", sans-serif;
+    color: var(--font-color);
+    padding-bottom: 10px;
+}
+
+.links {
+    font-family: "Hammersmith One", sans-serif;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.active{
+    color: var(--font-color);
+}
+
+.deactive{
+    color: var(--dimmed-font-color);
+}
+
+.searchbar {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+div {
+    display: block;
+}
+
+.div{
+    align-content: center;
+    align-self: center;
+}
+
+.info{
+    background-color: rgb(49, 49, 49);
+    text-align: center;
+    align-content: center;
+}
+
+.div-header {
+    text-align: center;
+    background-color: var(--horizontalnav-color);
+}
