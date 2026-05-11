@@ -23,23 +23,23 @@ async function fetchData() {
       throw new Error("Could not fetch resource");
     }
 
-    const data = await response.json()
-    
-
+    const data = await response.json();
     // ConsoleLogs the results
     console.log(data.data);
 
     // Displays the results
     const info = document.getElementById("info");
     info.innerHTML = data.data.length
-      ? data.data.map(g => `<p>${g.name}:</p> <p>Released: ${g.released_date}</p> <p>Description: </br> ${g.description}</p> </br></br>`).join("")
+      ? data.data
+          .map(
+            (g) =>
+              `<p>${g.name}:</p> <p>Released: ${g.released_date}</p> <p>Description: </br> ${g.description}</p> </br></br>`,
+          )
+          .join("")
       : "<p>No results found</p>";
 
-      // Search on MDN or W3schools to figure out how to convert this to lowercase only to make this more user friendly
-
-
+    // Search on MDN or W3schools to figure out how to convert this to lowercase only to make this more user friendly
   } catch (error) {
     console.error(error);
   }
-
 }
