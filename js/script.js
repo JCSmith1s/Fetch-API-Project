@@ -37,8 +37,7 @@ async function fetchData() {
           )
           .join("")
       : "<p>No results found</p>";
-
-    // Search on MDN or W3schools to figure out how to convert this to lowercase only to make this more user friendly
+      
   } catch (error) {
     console.error(error);
   }

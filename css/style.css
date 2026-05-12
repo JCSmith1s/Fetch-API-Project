@@ -1,58 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 
 :root {
-    --font-color: white;
-    --dimmed-font-color: rgb(160, 160, 160);
-    --background1-color: #171E1F;
-    --horizontalnav-color: rgb(63, 32, 18);
+  /* font Colors */
+  --font-color: white;
+  --dimmed-font-color: rgb(160, 160, 160);
+
+  /* Background Colors */
+  --background1-color: #171e1f;
+  --background2-color: rgb(49, 49, 49);
+  --background3-color: rgb(80, 80, 80);
+
+  /* Navigation Colors */
+  --horizontalnav-color: rgb(63, 32, 18);
+  --activenavhover-font-color: rgb(0, 206, 0);
+  --deactivenavhover-font-color: rgb(110, 110, 110);
+
+  /* Test Colors :) */
+  --test1-color: rgb(255, 0, 234);
 }
 
 .background1 {
-    background-color: var(--background1-color);
+  background-color: var(--background1-color);
 }
 
 p {
-    font-family: "Hammersmith One", sans-serif;
-    color: var(--font-color);
-    padding-bottom: 10px;
+  font-family: "Hammersmith One", sans-serif;
+  color: var(--font-color);
+  padding-bottom: 10px;
 }
 
 .links {
-    font-family: "Hammersmith One", sans-serif;
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
+  font-family: "Hammersmith One", sans-serif;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: color 1s ease;
 }
 
-.active{
-    color: var(--font-color);
+.active {
+  color: var(--font-color);
 }
 
-.deactive{
-    color: var(--dimmed-font-color);
+.active:hover {
+  color: var(--activenavhover-font-color);
+}
+
+.deactive {
+  color: var(--dimmed-font-color);
+  transition: color 1s ease;
+}
+
+.deactive:hover {
+  color: var(--deactivenavhover-font-color);
 }
 
 .searchbar {
-    margin-left: 3px;
-    margin-right: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 div {
-    display: block;
+  display: block;
 }
 
-.div{
-    align-content: center;
-    align-self: center;
+.div {
+  align-content: center;
+  align-self: center;
 }
 
-.info{
-    background-color: rgb(49, 49, 49);
-    text-align: center;
-    align-content: center;
+.info {
+  background-image: linear-gradient(
+    0deg,
+    var(--background2-color),
+    var(--background3-color)
+  );
+  text-align: center;
+  align-content: center;
 }
 
 .div-header {
-    text-align: center;
-    background-color: var(--horizontalnav-color);
+  text-align: center;
+  background-color: var(--horizontalnav-color);
 }
